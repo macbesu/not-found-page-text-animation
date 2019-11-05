@@ -294,67 +294,22 @@ body {
 
 @keyframes blink {
   0% {
-    -webkit-clip: rect(14.9rem,999.9rem,12.4rem,0);
-    clip: rect(14.9rem,999.9rem,12.4rem,0);
+    opacity: 0;
   }
 
-  8.333333333333332% {
-    -webkit-clip: rect(9.1rem,999.9rem,2.2rem,0);
-    clip: rect(9.1rem,999.9rem,2.2rem,0);
+  20% {
+    opacity: 1;
   }
 
-  16.666666666666664% {
-    -webkit-clip: rect(7rem,999.9rem,5.7rem,0);
-    clip: rect(7rem,999.9rem,5.7rem,0);
+  60% {
+    opacity: 1;
   }
 
-  25% {
-    -webkit-clip: rect(5.8rem,999.9rem,8.1rem,0);
-    clip: rect(5.8rem,999.9rem,8.1rem,0);
-  }
-
-  33.33333333333333% {
-    -webkit-clip: rect(10.6rem,999.9rem,0.8rem,0);
-    clip: rect(10.6rem,999.9rem,0.8rem,0);
-  }
-
-  41.66666666666667% {
-    -webkit-clip: rect(9rem,999.9rem,0.1rem,0);
-    clip: rect(9rem,999.9rem,0.1rem,0);
-  }
-
-  50% {
-    -webkit-clip: rect(0.7rem,999.9rem,9.7rem,0);
-    clip: rect(0.7rem,999.9rem,9.7rem,0);
-  }
-
-  58.333333333333336% {
-    -webkit-clip: rect(11.2rem,999.9rem,14.8rem,0);
-    clip: rect(11.2rem,999.9rem,14.8rem,0);
-  }
-
-  66.66666666666666% {
-    -webkit-clip: rect(4.2rem,999.9rem,9.3rem,0);
-    clip: rect(4.2rem,999.9rem,9.3rem,0);
-  }
-
-  75% {
-    -webkit-clip: rect(12.5rem,999.9rem,9.4rem,0);
-    clip: rect(12.5rem,999.9rem,9.4rem,0);
-  }
-
-  83.33333333333334% {
-    -webkit-clip: rect(2.2rem,999.9rem,0rem,0);
-    clip: rect(2.2rem,999.9rem,0rem,0);
-  }
-
-  91.66666666666666% {
-    -webkit-clip: rect(7.1rem,999.9rem,9.1rem,0);
-    clip: rect(7.1rem,999.9rem,9.1rem,0);
+  80% {
+    opacity: 0;
   }
 
   100% {
-    -webkit-clip: rect(14.7rem,999.9rem,4.4rem,0);
-    clip: rect(14.7rem,999.9rem,4.4rem,0);
+    opacity: 0;
   }
 }
