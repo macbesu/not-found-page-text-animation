@@ -1,4 +1,4 @@
-# Error Code Effect
+# Text Effect
 
 So the effect is as follows:
 
