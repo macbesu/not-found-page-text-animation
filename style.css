@@ -1,0 +1,360 @@
+html {
+  font: 62.5%/1 'Open Sans','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;
+}
+
+body {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  /* background-image: url(https://ucarecdn.com/eab3f393-4bf8-4770-a561-43d9668e2448/-/progressive/yes/); */
+  background: #000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container h1 {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+  line-height: 5.6rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 5.8rem;
+}
+
+.glitch {
+  margin: 0 0.4rem;
+  position: relative;
+}
+
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.glitch::before {
+  left: 0.2rem;
+  text-shadow: -0.2rem 0 red;
+  -webkit-clip: rect(2.4rem,55rem,9rem,0);
+  clip: rect(2.4rem,55rem,9rem,0);
+  -webkit-animation: glitch-red 3s infinite linear alternate-reverse;
+  animation: glitch-red 3s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -0.2.rem;
+  text-shadow: -0.2rem 0 blue;
+  -webkit-clip: rect(8.5rem,55rem,14rem,0);
+  clip: rect(8.5rem,55rem,14rem,0);
+  -webkit-animation: glitch-blue 2.5s infinite linear alternate-reverse;
+  animation: glitch-blue 2.5s infinite linear alternate-reverse;
+}
+
+.blink {
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes glitch-red {
+  0% {
+    -webkit-clip: rect(4.4rem,999.9rem,0.2rem,0);
+    clip: rect(4.4rem,999.9rem,0.2rem,0);
+  }
+
+  3.3333333333333335% {
+    -webkit-clip: rect(13.9rem,999.9rem,9.9rem,0);
+    clip: rect(13.9rem,999.9rem,9.9rem,0);
+  }
+
+  6.666666666666667% {
+    -webkit-clip: rect(9.1rem,999.9rem,5.4rem,0);
+    clip: rect(9.1rem,999.9rem,5.4rem,0);
+  }
+
+  10% {
+    -webkit-clip: rect(8.5rem,999.9rem,9.2rem,0);
+    clip: rect(8.5rem,999.9rem,9.2rem,0);
+  }
+
+  13.333333333333334% {
+    -webkit-clip: rect(3.1rem,999.9rem,7.2rem,0);
+    clip: rect(3.1rem,999.9rem,7.2rem,0);
+  }
+
+  16.666666666666664% {
+    -webkit-clip: rect(7.7rem,999.9rem,0.1rem,0);
+    clip: rect(7.7rem,999.9rem,0.1rem,0);
+  }
+
+  20% {
+    -webkit-clip: rect(12.2rem,999.9rem,14.7rem,0);
+    clip: rect(12.2rem,999.9rem,14.7rem,0);
+  }
+
+  23.333333333333332% {
+    -webkit-clip: rect(10rem,999.9rem,2.8rem,0);
+    clip: rect(10rem,999.9rem,2.8rem,0);
+  }
+
+  26.666666666666668% {
+    -webkit-clip: rect(12.3rem,999.9rem,14.6rem,0);
+    clip: rect(12.3rem,999.9rem,14.6rem,0);
+  }
+
+  30% {
+    -webkit-clip: rect(8.8rem,999.9rem,14.7rem,0);
+    clip: rect(8.8rem,999.9rem,14.7rem,0);
+  }
+
+  33.33333333333333% {
+    -webkit-clip: rect(13.3rem,999.9rem,7.7rem,0);
+    clip: rect(13.3rem,999.9rem,7.7rem,0);
+  }
+
+  36.666666666666664% {
+    -webkit-clip: rect(6.2rem,999.9rem,12.7rem,0);
+    clip: rect(6.2rem,999.9rem,12.7rem,0);
+  }
+
+  40% {
+    -webkit-clip: rect(5.9rem,999.9rem,14.5rem,0);
+    clip: rect(5.9rem,999.9rem,14.5rem,0);
+  }
+
+  43.333333333333336% {
+    -webkit-clip: rect(10.8rem,999.9rem,6.2rem,0);
+    clip: rect(10.8rem,999.9rem,6.2rem,0);
+  }
+
+  46.666666666666664% {
+    -webkit-clip: rect(8.7rem,999.9rem,9.2rem,0);
+    clip: rect(8.7rem,999.9rem,9.2rem,0);
+  }
+
+  50% {
+    -webkit-clip: rect(9.9rem,999.9rem,9.6rem,0);
+    clip: rect(9.9rem,999.9rem,9.6rem,0);
+  }
+
+  53.333333333333336% {
+    -webkit-clip: rect(9.9rem,999.9rem,5.9rem,0);
+    clip: rect(9.9rem,999.9rem,5.9rem,0);
+  }
+
+  56.666666666666664% {
+    -webkit-clip: rect(13.9rem,999.9rem,4.1rem,0);
+    clip: rect(13.9rem,999.9rem,4.1rem,0);
+  }
+
+  60% {
+    -webkit-clip: rect(14.9rem,999.9rem,11.7rem,0);
+    clip: rect(14.9rem,999.9rem,11.7rem,0);
+  }
+
+  63.33333333333333% {
+    -webkit-clip: rect(11rem,999.9rem,11.3rem,0);
+    clip: rect(11rem,999.9rem,11.3rem,0);
+  }
+
+  66.66666666666666% {
+    -webkit-clip: rect(3.7rem,999.9rem,1.5rem,0);
+    clip: rect(3.7rem,999.9rem,1.5rem,0);
+  }
+
+  70% {
+    -webkit-clip: rect(14.5rem,999.9rem,3.3rem,0);
+    clip: rect(14.5rem,999.9rem,3.3rem,0);
+  }
+
+  73.33333333333333% {
+    -webkit-clip: rect(9.8rem,999.9rem,14.1rem,0);
+    clip: rect(9.8rem,999.9rem,14.1rem,0);
+  }
+
+  76.66666666666667% {
+    -webkit-clip: rect(1.2rem,999.9rem,1.1rem,0);
+    clip: rect(1.2rem,999.9rem,1.1rem,0);
+  }
+
+  80% {
+    -webkit-clip: rect(10.5rem,999.9rem,6.5rem,0);
+    clip: rect(10.5rem,999.9rem,6.5rem,0);
+  }
+
+  83.33333333333334% {
+    -webkit-clip: rect(0.7rem,999.9rem,10.2rem,0);
+    clip: rect(0.7rem,999.9rem,10.2rem,0);
+  }
+
+  86.66666666666667% {
+    -webkit-clip: rect(9.4rem,999.9rem,2.6rem,0);
+    clip: rect(9.4rem,999.9rem,2.6rem,0);
+  }
+
+  90% {
+    -webkit-clip: rect(6.1rem,999.9rem,6rem,0);
+    clip: rect(6.1rem,999.9rem,6rem,0);
+  }
+
+  93.33333333333333% {
+    -webkit-clip: rect(0.4rem,999.9rem,6.6rem,0);
+    clip: rect(0.4rem,999.9rem,6.6rem,0);
+  }
+
+  96.66666666666667% {
+    -webkit-clip: rect(5rem,999.9rem,14.8rem,0);
+    clip: rect(5rem,999.9rem,14.8rem,0);
+  }
+
+  100% { 
+    -webkit-clip: rect(12rem,999.9rem,0.9rem,0);
+    clip: rect(12rem,999.9rem,0.9rem,0);
+  }
+}
+
+@keyframes glitch-blue {
+  0% {
+    -webkit-clip: rect(14.9rem,999.9rem,12.4rem,0);
+    clip: rect(14.9rem,999.9rem,12.4rem,0);
+  }
+
+  8.333333333333332% {
+    -webkit-clip: rect(9.1rem,999.9rem,2.2rem,0);
+    clip: rect(9.1rem,999.9rem,2.2rem,0);
+  }
+
+  16.666666666666664% {
+    -webkit-clip: rect(7rem,999.9rem,5.7rem,0);
+    clip: rect(7rem,999.9rem,5.7rem,0);
+  }
+
+  25% {
+    -webkit-clip: rect(5.8rem,999.9rem,8.1rem,0);
+    clip: rect(5.8rem,999.9rem,8.1rem,0);
+  }
+
+  33.33333333333333% {
+    -webkit-clip: rect(10.6rem,999.9rem,0.8rem,0);
+    clip: rect(10.6rem,999.9rem,0.8rem,0);
+  }
+
+  41.66666666666667% {
+    -webkit-clip: rect(9rem,999.9rem,0.1rem,0);
+    clip: rect(9rem,999.9rem,0.1rem,0);
+  }
+
+  50% {
+    -webkit-clip: rect(0.7rem,999.9rem,9.7rem,0);
+    clip: rect(0.7rem,999.9rem,9.7rem,0);
+  }
+
+  58.333333333333336% {
+    -webkit-clip: rect(11.2rem,999.9rem,14.8rem,0);
+    clip: rect(11.2rem,999.9rem,14.8rem,0);
+  }
+
+  66.66666666666666% {
+    -webkit-clip: rect(4.2rem,999.9rem,9.3rem,0);
+    clip: rect(4.2rem,999.9rem,9.3rem,0);
+  }
+
+  75% {
+    -webkit-clip: rect(12.5rem,999.9rem,9.4rem,0);
+    clip: rect(12.5rem,999.9rem,9.4rem,0);
+  }
+
+  83.33333333333334% {
+    -webkit-clip: rect(2.2rem,999.9rem,0rem,0);
+    clip: rect(2.2rem,999.9rem,0rem,0);
+  }
+
+  91.66666666666666% {
+    -webkit-clip: rect(7.1rem,999.9rem,9.1rem,0);
+    clip: rect(7.1rem,999.9rem,9.1rem,0);
+  }
+
+  100% {
+    -webkit-clip: rect(14.7rem,999.9rem,4.4rem,0);
+    clip: rect(14.7rem,999.9rem,4.4rem,0);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-clip: rect(14.9rem,999.9rem,12.4rem,0);
+    clip: rect(14.9rem,999.9rem,12.4rem,0);
+  }
+
+  8.333333333333332% {
+    -webkit-clip: rect(9.1rem,999.9rem,2.2rem,0);
+    clip: rect(9.1rem,999.9rem,2.2rem,0);
+  }
+
+  16.666666666666664% {
+    -webkit-clip: rect(7rem,999.9rem,5.7rem,0);
+    clip: rect(7rem,999.9rem,5.7rem,0);
+  }
+
+  25% {
+    -webkit-clip: rect(5.8rem,999.9rem,8.1rem,0);
+    clip: rect(5.8rem,999.9rem,8.1rem,0);
+  }
+
+  33.33333333333333% {
+    -webkit-clip: rect(10.6rem,999.9rem,0.8rem,0);
+    clip: rect(10.6rem,999.9rem,0.8rem,0);
+  }
+
+  41.66666666666667% {
+    -webkit-clip: rect(9rem,999.9rem,0.1rem,0);
+    clip: rect(9rem,999.9rem,0.1rem,0);
+  }
+
+  50% {
+    -webkit-clip: rect(0.7rem,999.9rem,9.7rem,0);
+    clip: rect(0.7rem,999.9rem,9.7rem,0);
+  }
+
+  58.333333333333336% {
+    -webkit-clip: rect(11.2rem,999.9rem,14.8rem,0);
+    clip: rect(11.2rem,999.9rem,14.8rem,0);
+  }
+
+  66.66666666666666% {
+    -webkit-clip: rect(4.2rem,999.9rem,9.3rem,0);
+    clip: rect(4.2rem,999.9rem,9.3rem,0);
+  }
+
+  75% {
+    -webkit-clip: rect(12.5rem,999.9rem,9.4rem,0);
+    clip: rect(12.5rem,999.9rem,9.4rem,0);
+  }
+
+  83.33333333333334% {
+    -webkit-clip: rect(2.2rem,999.9rem,0rem,0);
+    clip: rect(2.2rem,999.9rem,0rem,0);
+  }
+
+  91.66666666666666% {
+    -webkit-clip: rect(7.1rem,999.9rem,9.1rem,0);
+    clip: rect(7.1rem,999.9rem,9.1rem,0);
+  }
+
+  100% {
+    -webkit-clip: rect(14.7rem,999.9rem,4.4rem,0);
+    clip: rect(14.7rem,999.9rem,4.4rem,0);
+  }
+}
